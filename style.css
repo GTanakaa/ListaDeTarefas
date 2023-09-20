@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+}
+
+body{
+    background-image: url(assets/FQdnZIaXsAUmczA.jpg_large);
+    background-position: center;
+    background-size: cover;
+}
+
+button{
+    background-color: azure;
+    color: #091d3a;
+    border: 2px solid #091d3a;
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+button:hover{
+    background-color: #091d3a;
+    color: #fff;
+}
+
+button:hover > i{
+    color: #fff;
+}
+
+button i{
+    color: #091d3a;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+input, select{
+    padding: 0.25rem 0.5rem;
+}
+
+.hider{
+    display: none;
+}
+
+/* header*/
+
+.tarefa-container{
+    max-width: 600px;
+    margin: 3rem auto 0;
+    background-color: whitesmoke;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.tarefa-container header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+/*formulario*/
+
+#tarefa-form, #edit-form{
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#tarefa-form p, #edit-form p{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-control{
+    display: flex;
+}
+
+.form-control input{
+    margin-right: 0.3rem;
+}
+
+#cancela-edit-btn{
+    margin-top: 1rem;
+    color: #444;
+}
+
+/*Toolbar*/
+#toolbar{
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+
+#toolbar h4{
+    margin-bottom: 0.5rem;
+}
+
+#pesquisa{
+    border-right: 1px solid #ddd;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#pesquisa form{
+    display: flex;
+}
+
+#pesquisa input{
+    width: 100%;
+    margin-right: 0.3rem;
+}
+
+#filtro{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filtro select{
+    flex: 1;
+}
+
+/*Lista de Tarefas*/
+
+.tarefa{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  1.5rem;
+    border-bottom: 1px solid #ddd;
+    transition: .3s;
+}
+
+.tarefa h3{
+    flex: 1;
+    font-size: 0.9rem;
+    border-radius: 10px;
+}
+
+.tarefa button{
+    margin-left: 0.4rem;
+}
+
+.done{
+    background-image: url(assets/terminada.PNG);
+    background-size: contain;
+    border-radius: 10px;
+}
+
+.done h3{
+    color: rgb(92, 0, 134);
+    
+    text-decoration: line-through;
+    font-style: italic;
+}
